@@ -119,11 +119,12 @@ AI：先问你几个问题——
 
 | 来源 | 贡献的思想 |
 |------|-----------|
-| **Andrej Karpathy** | Vibe Coding 概念提出者（2025年2月）：用自然语言指挥 AI，不需要理解每一行代码 |
-| **吴恩达（Andrew Ng）** | 三振出局原则：同一个 bug 改三次不对就删掉换思路 — 来自他 2025 年关于 AI 辅助编程的访谈 |
-| **Harper Reed**（前 OpenAI CTO） | 文档驱动的 AI 编程工作流：先写规范文档，再让 AI 按文档执行 — 详见他公开的 AI 编程工作流文章 |
-| **Cursor/Windsurf 社区** | CLAUDE.md / .cursorrules 作为持久化 AI 上下文锚点 — 经数千个团队实战验证 |
-| **中国 Vibe Coding 社区** | 选择题审问法、OPC 工作流、微信小程序场景适配 |
+| **Andrej Karpathy** | Vibe Coding 概念提出者：用自然语言指挥 AI，不需要理解每一行代码 |
+| **吴恩达（Andrew Ng）** | 三振出局原则：同一个 bug 改三次不对就删掉换思路 |
+| **Harper Reed**（前 OpenAI CTO） | 文档驱动的 AI 编程工作流：先写规范文档，再让 AI 按文档执行 |
+| **Cursor/Windsurf 社区** | CLAUDE.md / .cursorrules 作为持久化 AI 上下文锚点 |
+| **歸藏、宝玉、王树义** | 中文社区 AI 编程方法论的系统化实践与传播 |
+| **Super 黄、老金** | 「元」概念与 AI Native 工作流的深度探索 |
 
 > 「AI 是翻译器，把意图转成代码。意图模糊 = 代码是屎山。」
 > — 本 Skill 核心理念
@@ -132,29 +133,30 @@ AI：先问你几个问题——
 
 ## 关于作者
 
-由一位**AI 产品经理**构建，已在多个领域落地多个 AI 原生产品。
+**雲天** — AI 产品经理，AI 时代的探索者与冲浪者，极限运动爱好者。
 
-- 长期关注 Vibe Coding、AI 产品、出海与 GTM 策略
-- 致力于探索 AI 生产力革新，协同个体和企业 AI 转型破局
-- 极限运动爱好者 — 同样的行动偏向也体现在用 AI 构建产品上
+长期关注 AI 产品、Vibe Coding、出海、GTM，致力于探索 AI 生产力革新，协同个体和企业 AI 转型破局。
 
-这个 Skill 是真实项目经验的提炼：哪些模式有效、哪些坑浪费时间、哪些工作流能从个人扩展到团队。
+这个 Skill 是多个真实项目的经验提炼：哪些模式有效、哪些坑浪费时间、哪些工作流能从个人扩展到团队。
+
+📧 juging_lau@163.com
+
+<img src="wechat-qr.png" width="200" alt="微信二维码" />
 
 ---
 
 ## 快速安装
 
-### 方式一：告诉 AI 安装（推荐）
+### 方式一：npx 一键安装（推荐）
 
-在 Claude Code 中直接说：
-```
-安装这个 skill：https://github.com/[你的用户名]/vibe-coding-coach
+```bash
+npx skills add aituntian/-vibe-coding-coach
 ```
 
 ### 方式二：手动安装
 
 ```bash
-git clone https://github.com/[你的用户名]/vibe-coding-coach \
+git clone https://github.com/aituntian/-vibe-coding-coach \
   ~/.claude/skills/vibe-coding-coach
 ```
 

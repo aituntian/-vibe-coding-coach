@@ -122,42 +122,43 @@ This Skill synthesizes methods from world-class AI coding practitioners:
 
 | Source | Contribution |
 |--------|-------------|
-| **Andrej Karpathy** | Coined "Vibe Coding" (Feb 2025): direct AI with natural language, no need to understand every line |
-| **Andrew Ng** | Three-strikes rule: if a bug isn't fixed after 3 attempts, delete and rethink — from his 2025 interview on AI-assisted coding |
-| **Harper Reed** (ex-OpenAI CTO) | Document-driven AI workflow: write specs first, then let AI execute — detailed in his public AI coding workflow writeup |
-| **Cursor/Windsurf community** | CLAUDE.md / .cursorrules as persistent AI context anchors — battle-tested by thousands of teams |
-| **Chinese Vibe Coding community** | Multiple-choice interrogation method, OPC (one-person company) workflows, Mini Program adaptation |
+| **Andrej Karpathy** | Coined "Vibe Coding": direct AI with natural language, no need to understand every line |
+| **Andrew Ng** | Three-strikes rule: if a bug isn't fixed after 3 attempts, delete and rethink |
+| **Harper Reed** (ex-OpenAI CTO) | Document-driven AI workflow: write specs first, then let AI execute against them |
+| **Cursor/Windsurf community** | CLAUDE.md / .cursorrules as persistent AI context anchors |
+| **歸藏, 宝玉, 王树义** | Systematic practice and evangelism of AI coding methodology in the Chinese community |
+| **Super 黄, 老金** | Deep exploration of "meta" concepts and AI Native workflows |
 
 > "AI is a translator — it converts intent into code. Vague intent = spaghetti code."
-> — Core principle of this Skill
 
 ---
 
 ## About the Author
 
-Built by an **AI Product Manager** who has shipped multiple AI-native products across different domains.
+**雲天 (Yuntun)** — AI Product Manager, explorer and surfer of the AI era, extreme sports enthusiast.
 
-- Long-term practitioner of Vibe Coding, AI productivity, and going-global (出海) strategies
-- Focused on AI product design, GTM, and helping individuals & teams break through with AI transformation
-- Extreme sports enthusiast — the same bias-for-action mindset applies to building with AI
+Long-term focus on AI products, Vibe Coding, going global (出海), and GTM. Dedicated to exploring AI productivity innovation and helping individuals & teams break through with AI transformation.
 
-This Skill is distilled from real project experience: the patterns that worked, the pitfalls that burned time, and the workflows that actually scale from solo builders to teams.
+This Skill is distilled from real project experience: patterns that worked, pitfalls that burned time, workflows that scale from solo to team.
+
+📧 juging_lau@163.com
+
+<img src="wechat-qr.png" width="200" alt="WeChat QR Code" />
 
 ---
 
 ## Installation
 
-### Option 1: Tell your AI (recommended)
+### Option 1: npx one-liner (recommended)
 
-In Claude Code, just say:
-```
-Install this skill: https://github.com/[your-username]/vibe-coding-coach
+```bash
+npx skills add aituntian/-vibe-coding-coach
 ```
 
 ### Option 2: Manual
 
 ```bash
-git clone https://github.com/[your-username]/vibe-coding-coach \
+git clone https://github.com/aituntian/-vibe-coding-coach \
   ~/.claude/skills/vibe-coding-coach
 ```
 

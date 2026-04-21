@@ -1,196 +1,197 @@
 # Vibe Coding Coach
 
-> 把「跟 AI 聊天祈祷出代码」升级为「有体系地指挥 AI 构建产品」
+> Upgrade from "chatting with AI and praying for code" to "directing AI to build products systematically"
 
 ---
 
-## 这是什么？
+## What is this?
 
-一个给 AI 编程助手（Claude Code、Cursor、Windsurf 等）用的 **Skill（技能插件）**。
+A **Skill plugin** for AI coding assistants (Claude Code, Cursor, Windsurf, etc.).
 
-安装后，当你说「我想做一个 XX 产品」，AI 不会立刻开始写代码——
-它会先像一个经验丰富的技术合伙人一样，把你的想法问清楚，
-帮你生成 6 份规范文档，然后按步骤有序地构建。
+When you say "I want to build X", the AI won't immediately start writing code.
+Instead, it acts like an experienced technical co-founder — asks the right questions,
+generates 6 specification documents, then builds step by step.
 
-**核心价值：让 AI 编程从「随机漫步」变成「有图纸的施工」。**
-
----
-
-## 为什么需要它？
-
-### 没有这个 Skill 时
-
-```
-你：帮我做一个任务管理 App
-AI：好的！[生成 500 行代码]
-你：不对，我要的是手机端的
-AI：好的！[重写 500 行代码]
-你：还不对，我要微信小程序
-AI：好的！[再重写 500 行代码]
-...三天后，你有一堆代码，但没有产品
-```
-
-### 有了这个 Skill 之后
-
-```
-你：帮我做一个任务管理 App
-AI：先问你几个问题——
-   给谁用？手机还是电脑？需要登录吗？
-   数据存在哪里？有没有喜欢的 App 参考？
-   [10 分钟审问后]
-   好，我生成了 6 份规范文档，我们从第一步开始。
-...三天后，你有一个可以上线的产品
-```
+**Core value: Turn AI coding from "random walk" into "construction with blueprints".**
 
 ---
 
-## 适合谁用？
+## Why do you need it?
 
-### 🌱 零代码小白
-你有想法，但不懂编程。Vibe Coding 让你可以用自然语言指挥 AI 写代码。
-但没有体系，AI 很快就会失控——代码越来越乱，你越来越看不懂。
+### Without this Skill
 
-**这个 Skill 给你一套「导演手册」**：你不需要写代码，但你需要知道故事讲什么。
-
-### 👨‍💻 独立开发者 / 全栈工程师
-你已经在用 AI 编程，但发现：
-- 长对话后 AI 开始「忘事」
-- 同一个 bug 改了三次还没好
-- 项目大了之后 AI 开始乱改代码
-
-**这个 Skill 给你一套「项目记忆系统」**：CLAUDE.md + progress.txt + lessons.md，
-让 AI 在每次新会话都能精准恢复上下文，不重复犯错。
-
-### ⚡ OPC（一人公司 / 超级个体）
-你一个人要做产品、运营、设计、开发。时间是你最稀缺的资源。
-
-**这个 Skill 让你的 AI 协作效率提升 3-5 倍**：
-- 不再在「AI 猜测你的意图」上浪费时间
-- 不再在「修复 AI 引入的新 bug」上浪费时间
-- 每 15-20 分钟一个 checkpoint，随时可以暂停恢复
-
-### 🏢 AI Native 团队
-你们已经在用 AI 编程，但团队协作时发现：
-- 每个人的 AI 工作流不一样，代码风格混乱
-- 新成员上手慢，不知道项目的「AI 规则」是什么
-- 没有统一的文档规范，AI 在不同会话里做出矛盾的决策
-
-**这个 Skill 给团队一套「AI 协作标准」**：
-6 份规范文档 + CLAUDE.md 作为团队共享的 AI 上下文，
-任何人打开新会话都能立刻进入状态。
-
----
-
-## 核心功能
-
-### 1. 无尽审问（Relentless Interrogation）
-在写任何代码之前，用选择题 + 开放回答的方式把需求问清楚。
-宁可多问 10 个问题，也不带着 1 个假设去写代码。
-
-### 2. 6 份规范文档自动生成
-| 文档 | 作用 |
-|------|------|
-| PRD.md | 功能范围、用户故事、非目标 |
-| APP_FLOW.md | 每个页面、导航路径、决策点 |
-| TECH_STACK.md | 每个包锁定到确切版本 |
-| FRONTEND_GUIDELINES.md | 调色板、间距、字体、组件规范 |
-| BACKEND_STRUCTURE.md | 数据库 schema、API 端点 |
-| IMPLEMENTATION_PLAN.md | 编号的逐步构建序列 |
-
-### 3. 会话记忆系统
-- `CLAUDE.md` — AI 的「项目宪法」，每次会话自动读取
-- `progress.txt` — 当前进度快照，跨会话恢复状态
-- `lessons.md` — 错误日志，AI 不重复犯同样的错
-
-### 4. 结构化调试流程
-卡住了？不是「继续改」，而是：收集信息 → 生成假设 → 逐一验证 → 三振出局换思路。
-
-### 5. Skill 协同机制
-在每个阶段主动调用最合适的专项 Skill（调试、TDD、前端设计、并行代理等），
-不是一个 Skill 包打天下，而是一个「教练」知道什么时候叫哪个「专家」上场。
-
----
-
-## 思想来源
-
-这个 Skill 综合了全球顶级 AI 编程实践者的方法论：
-
-| 来源 | 贡献的思想 |
-|------|-----------|
-| **Andrej Karpathy** | Vibe Coding 概念：用自然语言指挥 AI，不需要理解每一行代码 |
-| **吴恩达（Andrew Ng）** | 三振出局原则：同一个 bug 改三次不对就删掉换思路，2025 年访谈 |
-| **Harper Reed** | 文档驱动的 AI 编程工作流：先写规范文档，再让 AI 按文档执行 |
-| **Cursor/Windsurf 社区** | CLAUDE.md / .cursorrules 作为 AI 上下文锚点的最佳实践 |
-| **中国 Vibe Coding 社区** | 选择题审问法、OPC 工作流、微信小程序场景适配 |
-
-> 「AI 是翻译器，把意图转成代码。意图模糊 = 代码是屎山。」
-> — 本 Skill 核心理念
-
----
-
-## 快速安装
-
-### 方式一：告诉 AI 安装（推荐）
-
-在 Claude Code 中直接说：
 ```
-安装这个 skill：https://github.com/[你的用户名]/vibe-coding-coach
+You:  Build me a task management app
+AI:   Sure! [generates 500 lines of code]
+You:  No, I need it on mobile
+AI:   Got it! [rewrites 500 lines]
+You:  Actually, WeChat Mini Program
+AI:   Of course! [rewrites again]
+...3 days later: lots of code, no product
 ```
 
-### 方式二：手动安装
+### With this Skill
+
+```
+You:  Build me a task management app
+AI:   Let me ask a few things first —
+      Who's it for? Mobile or desktop? Login required?
+      Where does data live? Any apps you like as reference?
+      [10 min interrogation]
+      Great. I've generated 6 spec docs. Let's start with step 1.
+...3 days later: a shippable product
+```
+
+---
+
+## Who is it for?
+
+### 🌱 No-code Creators
+Product managers, designers, entrepreneurs with ideas but no coding background.
+Vibe Coding lets you direct AI with natural language — but without structure, AI spirals out of control fast.
+
+**This Skill gives you a director's handbook.** You don't write code. You just need to know what story you're telling.
+
+### ⚡ Solo Builders / One-Person Companies
+You're doing product, design, dev, and ops alone. Time is your scarcest resource.
+
+**This Skill makes your AI 3-5x more efficient:**
+- No more time lost to "AI guessing your intent"
+- No more time lost to "fixing bugs AI introduced"
+- Checkpoint every 15-20 min — pause and resume anytime
+
+### 👨‍💻 Independent Developers / Full-Stack Engineers
+You're already using AI coding tools, but noticing:
+- AI "forgets" goals after long conversations
+- Same bug fixed three times, still broken
+- AI starts making contradictory decisions as the project grows
+
+**This Skill gives your AI a project memory system** — CLAUDE.md + progress.txt + lessons.md.
+Every new session picks up exactly where you left off.
+
+### 🏢 AI-Native Teams
+You're building with AI, but team collaboration is messy:
+- Everyone has a different AI workflow
+- New members don't know the "AI rules" for the project
+- AI makes conflicting decisions across sessions
+
+**This Skill gives your team a shared AI context standard.**
+6 spec docs + CLAUDE.md as a shared source of truth — anyone opens a new session and immediately gets up to speed.
+
+### 🔄 Traditional Teams Adopting AI
+You want to introduce AI coding but worry about losing control.
+
+**Start with the documents, not the code.** This Skill's document-first approach gives you guardrails before AI touches a single line.
+
+---
+
+## Core Features
+
+### 1. Relentless Interrogation
+Before any code is written, the AI uses structured multiple-choice + open questions to eliminate every assumption. Better to ask 10 extra questions than carry 1 wrong assumption into code.
+
+### 2. 6 Auto-Generated Spec Documents
+
+| Document | Purpose |
+|----------|---------|
+| `PRD.md` | Features, user stories, success criteria, non-goals |
+| `APP_FLOW.md` | Every page, navigation paths, decision points |
+| `TECH_STACK.md` | Every package pinned to exact version |
+| `FRONTEND_GUIDELINES.md` | Color palette, spacing, typography, component specs |
+| `BACKEND_STRUCTURE.md` | Database schema, API endpoints, auth |
+| `IMPLEMENTATION_PLAN.md` | Numbered step-by-step build sequence |
+
+### 3. Session Memory System
+- `CLAUDE.md` — The AI's "project constitution", auto-loaded every session
+- `progress.txt` — Current state snapshot for cross-session recovery
+- `lessons.md` — Error log so AI never repeats the same mistake
+
+### 4. Structured Debugging
+Stuck? Not "keep trying" — instead: collect info → generate hypotheses → validate one by one → three-strikes rule: delete and rethink.
+
+### 5. Skill Orchestration
+At each phase, proactively calls the right specialist Skill (debugging, TDD, frontend design, parallel agents). Not one Skill that does everything — a coach that knows when to call which expert.
+
+---
+
+## Intellectual Lineage
+
+This Skill synthesizes methods from world-class AI coding practitioners:
+
+| Source | Contribution |
+|--------|-------------|
+| **Andrej Karpathy** | Coined "Vibe Coding": direct AI with natural language, no need to understand every line |
+| **Andrew Ng** | Three-strikes rule: if a bug isn't fixed after 3 attempts, delete and rethink (2025 interview) |
+| **Harper Reed** | Document-driven AI workflow: write specs first, then let AI execute against them |
+| **Cursor/Windsurf community** | CLAUDE.md / .cursorrules as persistent AI context anchors |
+| **Chinese Vibe Coding community** | Multiple-choice interrogation method, OPC workflows, Mini Program adaptation |
+
+> "AI is a translator — it converts intent into code. Vague intent = spaghetti code."
+> — Core principle of this Skill
+
+---
+
+## Installation
+
+### Option 1: Tell your AI (recommended)
+
+In Claude Code, just say:
+```
+Install this skill: https://github.com/[your-username]/vibe-coding-coach
+```
+
+### Option 2: Manual
 
 ```bash
-git clone https://github.com/[你的用户名]/vibe-coding-coach \
+git clone https://github.com/[your-username]/vibe-coding-coach \
   ~/.claude/skills/vibe-coding-coach
 ```
 
 ---
 
-## 使用方式
-
-安装后，在任何 AI 编程会话中触发：
+## Usage
 
 ```
-# 新项目
-「我想做一个 XX 产品，帮我用 vibe coding coach 启动」
+# New project
+"I want to build X, use vibe coding coach to get started"
 
-# 恢复上下文
-「我回来了，继续上次的项目」
+# Resume context
+"I'm back, let's continue the project"
 
-# 卡住了
-「这个 bug 搞不定，帮我调试」
+# Stuck on a bug
+"Can't fix this bug, help me debug"
 
-# 功能完成
-「这个功能做完了，做个 checkpoint」
+# Feature complete
+"This feature is done, let's do a checkpoint"
 ```
 
 ---
 
-## 文件结构
+## File Structure
 
 ```
 vibe-coding-coach/
-├── SKILL.md                    # 主 Skill 文件（AI 读取的指令）
+├── SKILL.md                    # Main skill file (AI instructions)
 └── references/
-    ├── interrogation-guide.md  # 审问问题清单
-    ├── doc-templates.md        # 6 份文档模板
-    ├── session-files.md        # 会话文件模板与自运转机制
-    ├── debugging.md            # 结构化调试流程
-    └── principles.md           # 核心原则与常见坑
+    ├── interrogation-guide.md  # Question bank for interrogation phase
+    ├── doc-templates.md        # Templates for all 6 spec documents
+    ├── session-files.md        # Session file templates & self-running mechanism
+    ├── debugging.md            # Structured debugging workflow
+    └── principles.md           # Core principles & common pitfalls
 ```
 
 ---
 
-## 亮点对比
+## How it compares
 
-| 特性 | 普通 AI 编程 | Vibe Coding Coach |
-|------|------------|-------------------|
-| 需求澄清 | AI 猜测，经常跑偏 | 结构化审问，消除所有假设 |
-| 跨会话记忆 | 每次重新解释项目 | CLAUDE.md 自动恢复上下文 |
-| 错误处理 | 反复修同一个 bug | 三振出局，换思路重来 |
-| 项目规范 | 随 AI 心情决定 | 6 份文档锁定所有决策 |
-| 团队协作 | 每人一套工作流 | 统一的 AI 协作标准 |
-| 技术债务 | 悄悄积累 | lessons.md 显式记录 |
+| | Without Skill | With Vibe Coding Coach |
+|--|--------------|----------------------|
+| Requirements | AI guesses, often wrong | Structured interrogation, zero assumptions |
+| Cross-session memory | Re-explain project every time | CLAUDE.md auto-restores context |
+| Bug handling | Fix same bug repeatedly | Three-strikes: delete and rethink |
+| Project standards | AI decides arbitrarily | 6 docs lock every decision |
+| Team collaboration | Everyone has different workflow | Shared AI context standard |
+| Technical debt | Silently accumulates | Explicitly logged in lessons.md |
 
 ---
 

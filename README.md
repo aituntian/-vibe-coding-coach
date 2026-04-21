@@ -122,14 +122,26 @@ This Skill synthesizes methods from world-class AI coding practitioners:
 
 | Source | Contribution |
 |--------|-------------|
-| **Andrej Karpathy** | Coined "Vibe Coding": direct AI with natural language, no need to understand every line |
-| **Andrew Ng** | Three-strikes rule: if a bug isn't fixed after 3 attempts, delete and rethink (2025 interview) |
-| **Harper Reed** | Document-driven AI workflow: write specs first, then let AI execute against them |
-| **Cursor/Windsurf community** | CLAUDE.md / .cursorrules as persistent AI context anchors |
-| **Chinese Vibe Coding community** | Multiple-choice interrogation method, OPC workflows, Mini Program adaptation |
+| **Andrej Karpathy** | Coined "Vibe Coding" (Feb 2025): direct AI with natural language, no need to understand every line |
+| **Andrew Ng** | Three-strikes rule: if a bug isn't fixed after 3 attempts, delete and rethink — from his 2025 interview on AI-assisted coding |
+| **Harper Reed** (ex-OpenAI CTO) | Document-driven AI workflow: write specs first, then let AI execute — detailed in his public AI coding workflow writeup |
+| **Cursor/Windsurf community** | CLAUDE.md / .cursorrules as persistent AI context anchors — battle-tested by thousands of teams |
+| **Chinese Vibe Coding community** | Multiple-choice interrogation method, OPC (one-person company) workflows, Mini Program adaptation |
 
 > "AI is a translator — it converts intent into code. Vague intent = spaghetti code."
 > — Core principle of this Skill
+
+---
+
+## About the Author
+
+Built by an **AI Product Manager** who has shipped multiple AI-native products across different domains.
+
+- Long-term practitioner of Vibe Coding, AI productivity, and going-global (出海) strategies
+- Focused on AI product design, GTM, and helping individuals & teams break through with AI transformation
+- Extreme sports enthusiast — the same bias-for-action mindset applies to building with AI
+
+This Skill is distilled from real project experience: the patterns that worked, the pitfalls that burned time, and the workflows that actually scale from solo builders to teams.
 
 ---
 

@@ -1,5 +1,7 @@
 # Vibe Coding Coach
 
+[English](README.md) | [中文](README.zh.md) | [日本語](README.ja.md)
+
 > Upgrade from "chatting with AI and praying for code" to "directing AI to build products systematically"
 
 ---

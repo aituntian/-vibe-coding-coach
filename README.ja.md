@@ -1,5 +1,7 @@
 # Vibe Coding Coach
 
+[English](README.md) | [中文](README.zh.md) | [日本語](README.ja.md)
+
 > 「AIに祈りながらコードを書く」から「AIを体系的に指揮してプロダクトを作る」へ
 
 ---

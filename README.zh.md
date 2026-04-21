@@ -1,5 +1,7 @@
 # Vibe Coding Coach
 
+[English](README.md) | [中文](README.zh.md) | [日本語](README.ja.md)
+
 > 把「跟 AI 聊天祈祷出代码」升级为「有体系地指挥 AI 构建产品」
 
 ---
